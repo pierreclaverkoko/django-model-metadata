@@ -1,0 +1,35 @@
+[flake8]
+max-line-length = 119
+max-complexity = 12
+max-nesting-depth = 12
+exclude =
+    .venv,
+    venv,
+    .git,
+    __pycache__,
+    docs/source/conf.py,
+    old,
+    build,
+    _build,
+    dist,
+    migrations,
+    snapshots
+
+ignore =
+    E203,
+    E501,
+    W503,
+    F405,
+    E731,
+    C901,
+    B023,
+    D104,
+    D100,
+    D101,
+    D106,
+    D105,
+    D205,
+    D400,
+    D401,
+    D107,
+    D102

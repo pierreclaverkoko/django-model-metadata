@@ -33,3 +33,39 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/pierreclaverkoko/django-model-metadata"
+
+
+[tool.pip-tools]
+generate-hashes = false
+reuse-hashes = false
+
+[tool.black]
+line-length = 119
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | blib2to3
+  | tests/data
+  | profiling
+  | static
+  | migrations
+)/
+'''
+
+[tool.flake8]
+ignore = ["E501", "W503", "E203", "E501","W503","F405","E731","C901","B023"]
+max-line-length = 119
+select = ["E", "W"]
+max-complexity = 12
+max-nesting-depth = 12
