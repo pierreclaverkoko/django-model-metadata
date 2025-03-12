@@ -37,8 +37,9 @@ Then when we save the ``Material`` instance, a form will be automatically create
 You will then have the following :
 
 .. code-block:: python
+
     from django.db import models
-    from django_model_metadata.models import ModelGeneralMetaData
+    from django_model_metadata import GeneralMetadataTypeMixin, CustomMetadataMixin
 
     class MaterialType(GeneralMetadataTypeMixin):
         name = models.CharField(max_length=255)
@@ -51,7 +52,7 @@ You will then have the following :
     class Material(CustomMetadataMixin):
         name = models.CharField(max_length=255)
         description = models.TextField(blank=True, null=True)
-        material_type = models.ForeignKey("MaterialType", on_delete=models.CASCADE, related_name='materials')
+        material_type = models.ForeignKey("MaterialType", on_delete=models.CASCADE, related_name="materials")
 
         def get_element_type(self):
             return self.material_type
