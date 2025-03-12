@@ -1,0 +1,2 @@
+recursive-include django_model_metadata/static *
+recursive-include django_model_metadata/templates *
