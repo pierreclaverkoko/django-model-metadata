@@ -4,7 +4,7 @@ from .models import ModelGeneralMetaData
 class GeneralMetadataSerializer(serializers.ModelSerializer):
     class Meta:
         model = ModelGeneralMetaData
-        fields = ["id", "name", "field_name", "meta_type"]
+        fields = ["id", "name", "field_name", "meta_type","widget_attrs"]
 
 
 class GeneralMetadataListSerializer(serializers.ModelSerializer):
