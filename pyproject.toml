@@ -6,8 +6,9 @@ build-backend = "setuptools.build_meta"
 name = "django-model-metadata"
 version = "0.0.1"
 dependencies = [
-    "django>=5.1",
+    "django>=4.2",
     "swapper>=1.4.0",
+    "django-jsonform>=2.23.2",
 ]
 description = "A Django app for model metadata system."
 readme = "README.rst"
