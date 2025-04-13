@@ -20,7 +20,7 @@ Quick start
 
 3. Run ``python manage.py migrate`` to create the models.
 
-4. Start the development server and visit the admin to create a poll.
+4. Start the development server and visit the admin to begin creating metadata.
 
 Usage
 -----
