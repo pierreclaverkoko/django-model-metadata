@@ -11,6 +11,7 @@ Quick start
     INSTALLED_APPS = [
         ...,
         "django_model_metadata",
+        "django_jsonform",
     ]
 
 2. Include the polls URLconf in your project urls.py like this::
@@ -19,7 +20,7 @@ Quick start
 
 3. Run ``python manage.py migrate`` to create the models.
 
-4. Start the development server and visit the admin to create a poll.
+4. Start the development server and visit the admin to begin creating metadata.
 
 Usage
 -----
